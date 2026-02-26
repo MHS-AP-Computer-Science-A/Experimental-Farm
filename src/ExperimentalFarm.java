@@ -12,6 +12,8 @@ public class ExperimentalFarm {
      */
     public Plot getHighestYield(String c) {
         /* to be implemented in part (a) */
+
+        return null; //placeholder
     }
 
     /**
@@ -21,7 +23,10 @@ public class ExperimentalFarm {
      */
     public boolean sameCrop(int col) {
         /* to be implemented in part (b) */
+
+        return false; //placeholder
     }
 
 
 }
+
