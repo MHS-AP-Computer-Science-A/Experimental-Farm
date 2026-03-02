@@ -51,7 +51,7 @@ public class FarmTester
         System.out.println("Column 2 same crop? " + farm.sameCrop(2));
 
 
-        System.out.println("\n==== Testing sameCrop with a trickier array ====");
+        System.out.println("\n==== TESTING sameCrop WITH TRIECKY ARRAY ====");
         Plot[][] trickyPlots = {
             { new Plot("corn", 10), new Plot("corn", 10)},  
             { new Plot("corn", 20), new Plot("corn", 20)},  
@@ -65,3 +65,4 @@ public class FarmTester
 
     }
 }
+
