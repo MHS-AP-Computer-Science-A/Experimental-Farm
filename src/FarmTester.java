@@ -49,5 +49,19 @@ public class FarmTester
 
         // Column 2 -> should be false
         System.out.println("Column 2 same crop? " + farm.sameCrop(2));
+
+
+        System.out.println("\n==== Testing sameCrop with a trickier array ====");
+        Plot[][] trickyPlots = {
+            { new Plot("corn", 10), new Plot("corn", 10)},  
+            { new Plot("corn", 20), new Plot("corn", 20)},  
+            { new Plot("peas", 30), new Plot("peas", 30)},   
+            { new Plot("corn", 40), new Plot("peas", 40)}    
+        };
+
+        ExperimentalFarm trickyFarm = new ExperimentalFarm(trickyPlots);
+        System.out.println("Column 0 same crop? (expected false): " + trickyFarm.sameCrop(0));
+        System.out.println("Column 1 same crop? (expected false): " + trickyFarm.sameCrop(1));
+
     }
 }
